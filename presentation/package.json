@@ -1,0 +1,31 @@
+{
+  "name": "CTF",
+  "version": "0.0.1-SNAPSHOT",
+  "description": "NPM modules for the CTF presentation",
+  "keywords": "",
+  "homepage": "",
+  "bugs": {
+    "url": "http://github.com/dawud/project/issues",
+    "email": "david.sastre@redhat.com"
+  },
+  "license": "Worldpay",
+  "author": "David Sastre <david.sastre@redhat.com> (http://github.com/dawud)",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/isaacs/npm.git"
+  },
+  "scripts": {
+    "env": "env",
+    "prez:init": "./node_modules/.bin/prez $PWD build --init",
+    "prez:build": "./node_modules/.bin/prez $PWD build",
+    "prez:print": "./node_modules/.bin/prez $PWD build --print",
+    "prez:watch": "./node_modules/.bin/prez $PWD build --serve --watch",
+    "clean": "rm -rf build/ ; find . -type f -name '*~' -exec rm -f {} +"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "prez": "latest"
+  },
+  "os": "linux",
+  "private": "true"
+}
